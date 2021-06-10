@@ -14,7 +14,6 @@ const App: React.FC<AppProps> = (props) => {
   
   const handleChange = ((id: number) => {
     setState((prevState) => {
-      console.log('prevState', prevState)
       const updatedTodos = prevState.todos.map((todo) => {
         if (todo.id === id) {
           todo.completed = !todo.completed
